@@ -1,7 +1,45 @@
+/* Styling for the heading */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional styling for better presentation */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px; /* Spacing around the body */
     background-color: #e0f2f1; /* Soft teal background */
+}
+
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    width: calc(100% - 24px); /* Adjust width to account for padding */
+    max-width: 400px; /* Limit width */
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #00796b; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.6); /* Add a shadow to highlight focus */
+    background-color: #ffffff; /* Slight background change on focus */
 }
 
 table {
@@ -12,6 +50,7 @@ table {
     border-radius: 10px; /* More pronounced rounded corners */
     overflow: hidden; /* Ensure rounded corners are visible */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and transform transitions */
+    margin: 20px auto; /* Center align table */
 }
 
 table:hover {
@@ -51,23 +90,4 @@ tr:hover {
 td {
     font-family: 'Open Sans', sans-serif; /* Clean and readable font for table data */
     color: #333; /* Darker text color for readability */
-}
-
-#searchInput {
-    margin-bottom: 20px; /* Increased space below the search input */
-    padding: 12px; /* Slightly larger padding */
-    width: calc(100% - 24px); /* Adjust width to account for padding */
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle inner shadow */
-    font-family: 'Open Sans', sans-serif; /* Consistent font for input */
-    font-size: 16px; /* Font size for input text */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
-
-#searchInput:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: #00796b; /* Change border color on focus */
-    box-shadow: 0 0 8px rgba(0, 121, 107, 0.6); /* Add a shadow to highlight focus */
-    background-color: #ffffff; /* Slight background change on focus */
 }
